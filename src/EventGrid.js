@@ -8,8 +8,8 @@ export default function EventGrid({events, chosenEvent}) {
 
 
     return (
-        <div class="grid-container">{
-            sortedEvents.map(event => (<div class={chosenEvent === event ? "cell active" : "cell"}>{event}</div>))
+        <div className="grid-container">{
+            sortedEvents.map(event => (<div className={chosenEvent === event ? "cell active" : "cell"}>{event}</div>))
         }</div>
     );
 }
