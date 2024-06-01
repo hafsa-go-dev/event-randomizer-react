@@ -3,7 +3,7 @@ import {useState} from "react";
 export default function EventGrid({events, chosenEvent}) {
     let sortedEvents;
 
-    sortedEvents = events.slice().sort((a, b) => a - b);
+    sortedEvents = events.slice().sort();
 
 
 
