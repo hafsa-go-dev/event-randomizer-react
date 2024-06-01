@@ -71,7 +71,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-row: auto;
-  grid-gap: 0.6rem;
+  grid-gap: 0.4rem;
   align-items: center;
   justify-content: center;
   background-color: #86469C;
@@ -80,8 +80,9 @@ h3 {
 .cell {
   background-color: #FFCDEAFF;
   color: #86469C;
+  height: 5rem;
   padding: 1rem 2rem;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,6 +90,34 @@ h3 {
 .cell.active {
   background-color: #fb9ad1;
   color: #86469C;
+  height: 5rem;
   padding: 1rem 2rem;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: auto;
+    grid-gap: 0.4rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #86469C;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: auto;
+    grid-gap: 0.4rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #86469C;
+  }
 }
